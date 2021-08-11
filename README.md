@@ -8,10 +8,14 @@
   <h3>
     <!-- <a href="https://tiempo-tiempo.netlify.app">
       Demo [Loading....]
-    </a> -->
-    <span> | </span>
-    <a href="https://blade-01/galerie.git">
+    </a>
+    <span> | </span> -->
+    <a href="https://blade-01/moi-unsplash.git">
       Code
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
+      Challenge
     </a>
   </h3>
 </div>
@@ -50,7 +54,7 @@ Yayy 🤾!!! I built a weather app for checking users weather based on location 
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/) challenge. The [challenge](https://devchallenges.io/challenges/CtDWGnE4mBDp1s9HLRig) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
 
 Users should be able to:
 
