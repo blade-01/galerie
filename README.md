@@ -1,17 +1,19 @@
-<h1 align="center">Galerie</h1>
+<!-- Please update value in the {}  -->
+
+<h1 align="center">{Your project name}</h1>
 
 <div align="center">
-   Gallery created with Unsplash API 😎.
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
 <div align="center">
   <h3>
-    <!-- <a href="https://tiempo-tiempo.netlify.app">
-      Demo [Loading....]
+    <a href="https://{your-demo-link.your-domain}">
+      Demo
     </a>
-    <span> | </span> -->
-    <a href="https://blade-01/moi-unsplash.git">
-      Code
+    <span> | </span>
+    <a href="https://{your-url-to-the-solution}">
+      Solution
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
@@ -26,75 +28,65 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
-  - [Useful resources](#useful-resources)
 - [Features](#features)
 - [How to use](#how-to-use)
-- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![Home Page](/src/assets/img/Screenshot.png)
-![Search Page](/src/assets/img/Screenshot-search.png)
+![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-Yayy 🤾!!! I built a weather app for checking users weather based on location input.
+Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
+- Where can I see your demo?
+- What was your experience?
+- What have you learned/improved?
+- Your wisdom? :)
 
 ### Built With
 
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- [React](https://reactjs.org/)
 - [Vue.js](https://vuejs.org/)
-
-### Useful Resources
-
-- [Open Weather Map API](https://openweathermap.org/api) - This is the API used for fetching weather data.
-- [Moment JS](https://momentjs.com/) - This was used for date and time formatting.
-
+- [Tailwind](https://tailwindcss.com/)
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-Users should be able to:
-
-- View the optimal layout for the web app depending on their device's screen size
-- See a default location.
-- Search for city.
-- See weather updates by 3hrs.
-- See the date and location of the weather.
-- See an image according to each type of weather.
-- See temperature in both Celsius and Farenheit.
-- See humidity, wind direction, visibility and pressure values.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
 
 ## How To Use
+
+<!-- Example: -->
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/blade-01/tiempo.git
+$ git clone https://github.com/your-user-name/your-project-name
 
-# Project setup
-$ yarn install
+# Install dependencies
+$ npm install
 
-# Compiles and hot-reloads for development
-$ yarn serve
-
-# Compiles and minifies for production
-$ yarn build
-
-# Lints and fixes files
-$ yarn lint
+# Run the app
+$ npm start
 ```
 
 ## Acknowledgements
 
-- [ResponsivelyApp](https://responsively.app) - This extension helped me in viewing my projects in every viewport which helped improve responsiveness.
-- Checkout out [devChallenges](https://devchallenges.io/) for amazing software development challenges.
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
+
+- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
+- [Node.js](https://nodejs.org/)
+- [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
 
-- Website - [Animashaun Taofiq T.](https://www.github.com/blade-01)
-- LinkedIn - [Animashaun Taofiq T.](https://www.linkedin.com/in/animashaun-taofiq/)
-- Twitter - [@dr_annys](https://www.twitter.com/dr_annys)
+- Website [your-website.com](https://{your-web-site-link})
+- GitHub [@your-username](https://{github.com/your-usermame})
+- Twitter [@your-twitter](https://{twitter.com/your-username})
