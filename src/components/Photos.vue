@@ -4,7 +4,7 @@
       <router-link :to="{name:'Photos', params:{id: photo.id}}">
         <img :src="photo.urls.small" alt="unsplash_image">
         <div class="card-body">
-          <p>{{photo.user.first_name}}</p>
+          <p>{{photo.user.first_name}} {{photo.user.last_name}}</p>
           <small>{{photo.user.location ? photo.user.location : ''}}</small>
         </div>
       </router-link>

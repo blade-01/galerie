@@ -1,29 +1,38 @@
 <template>
-  <div class="photo-modal">
+  <div class="photo-modal" v-if="photo">
     <svg class="w-6 h-6 close" @click="redirect" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
     <div class="photo-modal-content">
-      <p>{{id}}</p>
+      <img :src="photo.urls.small" alt="">
+      <div class="photo-body">
+        <p>{{photo.user.first_name}} {{photo.user.last_name}}</p>
+        <small>{{photo.user.location}}</small>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import axios from 'axios'
+import axios from 'axios'
 export default {
   name: 'PhotosModal',
   props: ['id'],
+  data() {
+    return {
+      photo: null,
+      key: '4PADPOVyni-pXD_JEn8Hk36ENMebemzIz7ys9k2fH8U',
+    }
+  },
   methods: {
     redirect() {
       this.$router.push('/');
     },
-    // async showPhoto() {
-    // const res = await axios.get(`https://api.unsplash.com/search/photo?client_id=${this.id}&per_page=8`);
-    // const result = res.data.results;
-    // this.photos = result;
-    // }
+    async showPhoto() {
+    const res = await axios.get(`https://api.unsplash.com/photos/${this.id}/?client_id=${this.key}`);
+    this.photo = res.data;
+    }
   },
   mounted() {
-    // this.showPhoto()
+    this.showPhoto()
   }
 }
 </script>
@@ -35,7 +44,7 @@ export default {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
 .photo-modal-content {
@@ -44,9 +53,23 @@ export default {
   left: 50%;
   transform: translate(-50%, 0);
   background: var(--bg);
-  padding: 0 1rem;
   border-radius: 5px;
   width: 90%;
+}
+.photo-modal-content .photo-body {
+  padding: 0.5rem 1rem 1rem;
+}
+.photo-modal-content .photo-body p {
+  margin: 0.5rem 0;
+  padding: 0;
+}
+.photo-modal-content .photo-body small {
+  color: gray;
+}
+.photo-modal-content img {
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  max-height: 300px;
 }
 .photo-modal-content h4 {
   margin-bottom: 1rem;
@@ -63,8 +86,8 @@ export default {
     width: 450px;
   }
   .close {
-    top: 50px;
-    right: 70px;
+    /* top: 50px;
+    right: 70px; */
   }
 }
 </style>
