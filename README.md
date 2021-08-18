@@ -1,16 +1,16 @@
-<h1 align="center">Galerie</h1>
+<h1 align="center">Galerié</h1>
 
 <div align="center">
-   Gallery created with Unsplash API 😎.
+   Unsplash API Integration😎.
 </div>
 
 <div align="center">
   <h3>
-    <!-- <a href="https://tiempo-tiempo.netlify.app">
-      Demo [Loading....]
-    </a> -->
+    <a href="https://galerie.vercel.app">
+      Demo
+    </a>
     <span> | </span>
-    <a href="https://blade-01/galerie.git">
+    <a href="https://github.com/blade-01/galerie">
       Code
     </a>
   </h3>
@@ -33,9 +33,9 @@
 ## Overview
 
 ![Home Page](/src/assets/img/Screenshot.png)
-![Search Page](/src/assets/img/Screenshot-search.png)
+![Add Picture](/src/assets/img/Screenshot-add.png)
 
-Yayy 🤾!!! I built a weather app for checking users weather based on location input.
+Unsplash Clone but with Unsplash API integration.
 
 
 ### Built With
@@ -44,24 +44,18 @@ Yayy 🤾!!! I built a weather app for checking users weather based on location 
 
 ### Useful Resources
 
-- [Open Weather Map API](https://openweathermap.org/api) - This is the API used for fetching weather data.
-- [Moment JS](https://momentjs.com/) - This was used for date and time formatting.
+- Visit [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to learn more about localStorage.
 
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/) challenge. The [challenge](https://devchallenges.io/challenges/CtDWGnE4mBDp1s9HLRig) was to build an application to complete the given user stories.
-
 Users should be able to:
 
 - View the optimal layout for the web app depending on their device's screen size
-- See a default location.
-- Search for city.
-- See weather updates by 3hrs.
-- See the date and location of the weather.
-- See an image according to each type of weather.
-- See temperature in both Celsius and Farenheit.
-- See humidity, wind direction, visibility and pressure values.
+- See photos in masonry layout.
+- Search for photo.
+- See a ting overlay on top of images for good contrast.
+- Click on an image to see a modal viewing the image in its best resolution.
 
 ## How To Use
 
@@ -69,7 +63,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/blade-01/tiempo.git
+$ git clone https://github.com/blade-01/galerie.git
 
 # Project setup
 $ yarn install
@@ -87,7 +81,7 @@ $ yarn lint
 ## Acknowledgements
 
 - [ResponsivelyApp](https://responsively.app) - This extension helped me in viewing my projects in every viewport which helped improve responsiveness.
-- Checkout out [devChallenges](https://devchallenges.io/) for amazing software development challenges.
+- Checkout out [Unsplash API](https://api.unsplash.com) for documentation.
 
 ## Contact
 
