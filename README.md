@@ -44,7 +44,7 @@ Unsplash Clone but with Unsplash API integration.
 
 ### Useful Resources
 
-- Visit [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to learn more about localStorage.
+- Checkout out [Unsplash API](https://api.unsplash.com) for documentation.
 
 
 ## Features
@@ -81,7 +81,6 @@ $ yarn lint
 ## Acknowledgements
 
 - [ResponsivelyApp](https://responsively.app) - This extension helped me in viewing my projects in every viewport which helped improve responsiveness.
-- Checkout out [Unsplash API](https://api.unsplash.com) for documentation.
 
 ## Contact
 
