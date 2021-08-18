@@ -1,19 +1,17 @@
-<!-- Please update value in the {}  -->
-
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">moiUnsplash</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   Not your regular Unsplash 😎.
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://moi-unsplash.vercel.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
-      Solution
+    <a href="https://github.com/blade-01/moi-unsplash">
+      Code
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
@@ -28,65 +26,72 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
+  - [Useful resources](#useful-resources)
 - [Features](#features)
 - [How to use](#how-to-use)
-- [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Home Page](/src/assets/img/Screenshot.png)
+![Add Picture](/src/assets/img/Screenshot-add.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+Unsplash Clone but with localStorage as db.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [React](https://reactjs.org/)
 - [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+
+### Useful Resources
+
+- Visit [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to learn more about localStorage.
+
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
+Users should be able to:
+
+- View the optimal layout for the web app depending on their device's screen size
+- See photos in masonry layout.
+- Add a new photo to the list.
+- Search for photo by label.
+- Hover over a photo to see the delete button
+- Delete photos.
 
 ## How To Use
-
-<!-- Example: -->
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/blade-01/moi-unplash.git
 
-# Install dependencies
-$ npm install
+# Project setup
+$ yarn install
 
-# Run the app
-$ npm start
+# Compiles and hot-reloads for development
+$ yarn serve
+
+# Compiles and minifies for production
+$ yarn build
+
+# Lints and fixes files
+$ yarn lint
 ```
 
 ## Acknowledgements
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [ResponsivelyApp](https://responsively.app) - This extension helped me in viewing my projects in every viewport which helped improve responsiveness.
+- Checkout out [devChallenges](https://devchallenges.io/) for amazing software development challenges.
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website - [Animashaun Taofiq T.](https://www.github.com/blade-01)
+- LinkedIn - [Animashaun Taofiq T.](https://www.linkedin.com/in/animashaun-taofiq/)
+- Twitter - [@dr_annys](https://www.twitter.com/dr_annys)

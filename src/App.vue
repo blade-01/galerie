@@ -2,35 +2,12 @@
   <div class="container">
     <router-view/>
   </div>
-  <div class="container">
-    <Header @search-param="searchParam" />
-    <Photos :photos="photos"/>
-  </div>
- 
 </template>
 
 <script>
-// import Home from '@/views/Home.vue'
-import Header from '@/components/Header.vue'
-import Photos from '@/components/Photos.vue'
-import axios from 'axios'
 
 export default {
   name: 'App',
-  components: {Photos, Header},
-  data() {
-    return {
-      photos: [],
-      key: "4PADPOVyni-pXD_JEn8Hk36ENMebemzIz7ys9k2fH8U",
-    }
-  },
-  methods: {
-    async searchParam(search) {
-    const res = await axios.get(`https://api.unsplash.com/search/photos?query=${search}&client_id=${this.key}&per_page=8`);
-    const result = res.data.results;
-    this.photos = result;
-    }
-  }
 }
 </script>
 
@@ -42,13 +19,6 @@ export default {
   --form: #BDBDBD;
   --svg-fill: #333333;
   --filter: brightness(1);
-}
-:root .dark{
-  --text: #ffffff;
-  --bg: #333333;
-  --form: #BDBDBD;
-  --svg-fill: #ffffff;
-  --filter: brightness(0.8);
 }
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
