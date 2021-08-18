@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://galerie.vercel.app">
+    <a href="https://galerie-psi.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -33,7 +33,7 @@
 ## Overview
 
 ![Home Page](/src/assets/img/Screenshot.png)
-![Add Picture](/src/assets/img/Screenshot-add.png)
+![Picture Details](/src/assets/img/Screenshot-details.png)
 
 Unsplash Clone but with Unsplash API integration.
 
