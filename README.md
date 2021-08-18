@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://galerie.vercel.app">
+    <a href="https://galerie-psi.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -33,7 +33,7 @@
 ## Overview
 
 ![Home Page](/src/assets/img/Screenshot.png)
-![Add Picture](/src/assets/img/Screenshot-add.png)
+![Picture Details](/src/assets/img/Screenshot-details.png)
 
 Unsplash Clone but with Unsplash API integration.
 
@@ -44,7 +44,7 @@ Unsplash Clone but with Unsplash API integration.
 
 ### Useful Resources
 
-- Visit [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to learn more about localStorage.
+- Checkout out [Unsplash API](https://api.unsplash.com) for documentation.
 
 
 ## Features
@@ -81,7 +81,6 @@ $ yarn lint
 ## Acknowledgements
 
 - [ResponsivelyApp](https://responsively.app) - This extension helped me in viewing my projects in every viewport which helped improve responsiveness.
-- Checkout out [Unsplash API](https://api.unsplash.com) for documentation.
 
 ## Contact
 
