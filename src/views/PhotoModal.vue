@@ -2,7 +2,7 @@
   <div class="photo-modal" v-if="photo">
     <svg class="w-6 h-6 close" @click="redirect" fill="#fff" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
     <div class="photo-modal-content">
-      <img :src="photo.urls.small" alt="">
+      <img :src="photo.urls.full" alt="">
       <div class="photo-body">
         <p>{{photo.user.first_name}} {{photo.user.last_name}}</p>
         <small>{{photo.user.location}}</small>
@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     redirect() {
-      this.$router.push('/');
+      this.$router.go(-1);
     },
     async showPhoto() {
     const res = await axios.get(`https://api.unsplash.com/photos/${this.id}/?client_id=${this.key}`);
