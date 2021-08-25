@@ -1,5 +1,5 @@
 <template>
-  <div class="cards">
+  <div class="cards" v-if="myData">
     <div class="card" v-for="photo in photos" :key="photo.id">
       <router-link :to="{name:'Photos', params:{id: photo.id}}">
         <img :src="photo.urls.small" alt="unsplash_image">
@@ -10,12 +10,40 @@
       </router-link>
     </div>
   </div>
+  <div class="cards" v-else>
+    <div v-for="data in datas" :key="data">
+      <content-loader
+        :width="400"
+        :height="160"
+        :speed="2"
+        primaryColor="#f3f3f3"
+        secondaryColor="#ecebeb">
+        <rect x="416" y="43" rx="3" ry="3" width="88" height="6" /> 
+        <rect x="4" y="14" rx="3" ry="3" width="296" height="78" /> 
+        <rect x="5" y="99" rx="3" ry="3" width="239" height="6" /> 
+        <rect x="6" y="112" rx="3" ry="3" width="196" height="7" />
+      </content-loader>
+    </div>
+  </div>
 </template>
 
 <script>
+import { ContentLoader } from 'vue-content-loader';
 export default {
   name: 'Photos',
-  props: ['photos']
+  props: ['photos'],
+  components: {
+    ContentLoader
+  },
+  data() {
+    return {
+      myData: null,
+      datas: 8,
+    }
+  },
+  mounted() {
+    setTimeout(() => {this.myData = true}, 2000)
+  }
 }
 </script>
 
@@ -62,7 +90,6 @@ export default {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
-
 .card:hover .del-btn {
   opacity: 1;
 }

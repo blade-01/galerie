@@ -7152,6 +7152,11 @@
   "resolved" "https://registry.npmjs.org/vendors/-/vendors-1.0.4.tgz"
   "version" "1.0.4"
 
+"vue-content-loader@^2.0.0":
+  "integrity" "sha512-4HtRASF3y1S03pcilwneVZzbowwKyDBfsPzP2JE35RMDIjsPuGnr93nO/2kP4mmqP4Qwmw6uCPd3SHBgJAi8Bw=="
+  "resolved" "https://registry.npmjs.org/vue-content-loader/-/vue-content-loader-2.0.0.tgz"
+  "version" "2.0.0"
+
 "vue-eslint-parser@^7.10.0":
   "integrity" "sha512-7tc/ewS9Vq9Bn741pvpg8op2fWJPH3k32aL+jcIcWGCTzh/zXSdh7pZ5FV3W2aJancP9+ftPAv292zY5T5IPCg=="
   "resolved" "https://registry.npmjs.org/vue-eslint-parser/-/vue-eslint-parser-7.10.0.tgz"
@@ -7199,7 +7204,7 @@
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@^2 || ^3.0.0-0", "vue@^3.0.0", "vue@^3.0.2", "vue@^3.0.4", "vue@3.1.5":
+"vue@^2 || ^3.0.0-0", "vue@^3", "vue@^3.0.0", "vue@^3.0.2", "vue@^3.0.4", "vue@3.1.5":
   "integrity" "sha512-Ho7HNb1nfDoO+HVb6qYZgeaobt1XbY6KXFe4HGs1b9X6RhkWG/113n4/SrtM1LUclM6OrP/Se5aPHHvAPG1iVQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.1.5.tgz"
   "version" "3.1.5"
