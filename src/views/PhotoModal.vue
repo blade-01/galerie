@@ -1,8 +1,8 @@
 <template>
   <div class="photo-modal" v-if="myData">
-    <svg class="w-6 h-6 close" @click="redirect" fill="#fff" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <svg class="w-6 h-6 close" fill="none" stroke="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" @click="redirect"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
     <div class="photo-modal-content">
-      <img :src="photo.urls.full" alt="">
+      <img :src="photo.urls.regular" alt="">
       <div class="photo-body">
         <p>{{photo.user.first_name}} {{photo.user.last_name}}</p>
         <small>{{photo.user.location}}</small>
@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="photo-modal" v-else>
-    <svg class="w-6 h-6 close" @click="redirect" fill="#fff" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <svg class="w-6 h-6 close" fill="none" stroke="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
     <content-loader class="photo-modal-content"
       :width="400"
       :height="160"
@@ -47,6 +47,7 @@ export default {
     async showPhoto() {
     const res = await axios.get(`https://api.unsplash.com/photos/${this.id}/?client_id=${this.key}`);
     this.photo = res.data;
+    console.log(res.data)
     }
   },
   mounted() {
