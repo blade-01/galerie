@@ -6,14 +6,17 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: '/photos/:id',
+        name: 'Photos',
+        component: PhotoModal,
+        props: true
+      }
+    ]
   },
-  {
-    path: '/photos/:id',
-    name: 'Photos',
-    component: PhotoModal,
-    props: true
-  }
+  
 ]
 
 const router = createRouter({
