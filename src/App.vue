@@ -1,14 +1,13 @@
 <template>
   <div class="container">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -16,7 +15,7 @@ export default {
   --text: #333333;
   --bg: #ffffff;
   --btn: #3db46d;
-  --form: #BDBDBD;
+  --form: #bdbdbd;
   --svg-fill: #333333;
   --filter: brightness(1);
 }
@@ -79,17 +78,17 @@ img {
   color: #42b983;
 }
 @media screen and (min-width: 700px) {
- .container {
+  .container {
     width: 650px;
   }
 }
 @media screen and (min-width: 1000px) {
- .container {
+  .container {
     width: 900px;
   }
 }
 @media screen and (min-width: 1200px) {
- .container {
+  .container {
     width: 1200px;
   }
 }
