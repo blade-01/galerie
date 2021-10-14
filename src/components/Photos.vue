@@ -1,11 +1,11 @@
 <template>
-  <div class="cards" v-if="myData">
+  <div class="cards" v-if="photos.length">
     <div class="card" v-for="photo in photos" :key="photo.id">
-      <router-link :to="{name:'Photos', params:{id: photo.id}}">
-        <img :src="photo.urls.small" alt="unsplash_image">
+      <router-link :to="{ name: 'Photos', params: { id: photo.id } }">
+        <img :src="photo.urls.small" alt="unsplash_image" />
         <div class="card-body">
-          <p>{{photo.user.first_name}} {{photo.user.last_name}}</p>
-          <small>{{photo.user.location ? photo.user.location : ''}}</small>
+          <p>{{ photo.user.first_name }} {{ photo.user.last_name }}</p>
+          <small>{{ photo.user.location ? photo.user.location : "" }}</small>
         </div>
       </router-link>
     </div>
@@ -17,10 +17,11 @@
         :height="160"
         :speed="2"
         primaryColor="#f3f3f3"
-        secondaryColor="#ecebeb">
-        <rect x="416" y="43" rx="3" ry="3" width="88" height="6" /> 
-        <rect x="4" y="14" rx="3" ry="3" width="296" height="78" /> 
-        <rect x="5" y="99" rx="3" ry="3" width="239" height="6" /> 
+        secondaryColor="#ecebeb"
+      >
+        <rect x="416" y="43" rx="3" ry="3" width="88" height="6" />
+        <rect x="4" y="14" rx="3" ry="3" width="296" height="78" />
+        <rect x="5" y="99" rx="3" ry="3" width="239" height="6" />
         <rect x="6" y="112" rx="3" ry="3" width="196" height="7" />
       </content-loader>
     </div>
@@ -28,23 +29,25 @@
 </template>
 
 <script>
-import { ContentLoader } from 'vue-content-loader';
+import { ContentLoader } from "vue-content-loader";
 export default {
-  name: 'Photos',
-  props: ['photos'],
+  name: "Photos",
+  props: ["photos"],
   components: {
-    ContentLoader
+    ContentLoader,
   },
   data() {
     return {
       myData: null,
       datas: 8,
-    }
+    };
   },
   mounted() {
-    setTimeout(() => {this.myData = true}, 2000)
-  }
-}
+    setTimeout(() => {
+      this.myData = true;
+    }, 2000);
+  },
+};
 </script>
 
 <style scoped>
